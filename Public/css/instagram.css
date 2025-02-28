@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Follow Button */
+.follow-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* Blue */
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Message Button */
+.message-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e0e0e0;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message-btn:hover {
+    background-color: #bdbdbd;
+}
+
+/* 📌 User Info Section */
+.user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+/* Followers, Following, Posts Numbers */
+.stats {
+    display: flex;
+    gap: 30px; /* Space between numbers */
+    font-weight: bold;
+}
+
+/* Followers, Following, Posts Labels */
+.labels {
+    display: flex;
+    gap: 30px; /* Space between labels */
+    font-size: 14px;
+    color: gray;
+}
+
+/* Posts Container */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Post */
+.post {
+    width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Post Image */
+.post img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔥 Image Hover Effect */
+.post img:hover {
+    transform: rotate(-5deg) scale(1.05); /* Slant & Scale */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+/* Likes and Comments */
+p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Likes Text */
+.likes_text {
+    color: rgb(225, 48, 108); /* Instagram Pink */
+    font-weight: bold;
+}
+
+/* Comments Text */
+.comments_text {
+    color: #007bff; /* Blue */
+    font-weight: bold;
+}

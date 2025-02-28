@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="/css/instagram.css">
+</head>
+<body>
+    <h1>This page belong to @<%= data.name %> </h1>
+
+    <div class="button-container">
+        <button class="follow-btn">Follow</button>
+        <button class="message-btn">Message</button>
+    </div>
+
+   
+
+    <div class="user_info">
+        <div class="stats">
+            <span><%= data.followers %></span>
+            <span><%= data.following %></span>
+            <span><%= data.posts.length %></span>
+        </div>
+        <div class="labels">
+            <span>Followers</span>
+            <span>Following</span>
+            <span>Posts</span>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+<hr/>
+
+<div class="posts-container">
+    <% for(let post of data.posts) { %>
+        <div class="post">
+            <img src="<%= post.image %>" alt="some img"/>
+
+            <p>
+                <span class="likes_text">♥ Likes:</span> <%= post.likes %> 
+                &nbsp; &nbsp;
+                <span class="comments_text">Comments:</span> <%= post.comments %>
+            </p>
+        </div>
+    <% } %>
+</div>
+
+  
+<script src="/js/instagram.js"></script>
+</body>
+</html>
